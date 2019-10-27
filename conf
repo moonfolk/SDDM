@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sudo apt-get update
+sudo apt-get install python-pip
+sudo apt-get install python-matplotlib
+sudo apt-get install python-numpy 
+sudo pip install --upgrade pip
+# Remove existing scipy if any
+sudo apt-get purge scipy
+sudo pip install scipy --upgrade
+sudo pip install joblib --upgrade
+sudo pip install scikit-learn --upgrade 
